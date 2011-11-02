@@ -42,6 +42,7 @@ install -p misc/*.pl misc/*.py $RPM_BUILD_ROOT%{_bindir}
 install -p misc/{maq2sam-*,md5fa,seqtk,wgsim} $RPM_BUILD_ROOT%{_bindir}
 
 install -p samtools.1 $RPM_BUILD_ROOT%{_mandir}/man1
+echo ".so samtools.1" > $RPM_BUILD_ROOT%{_mandir}/man1/bcftools.1
 
 cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
@@ -52,5 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS bcftools/README
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/bcftools.1*
 %{_mandir}/man1/samtools.1*
 %{_examplesdir}/%{name}-%{version}
