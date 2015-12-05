@@ -2,7 +2,7 @@ Summary:	Efficient utilities on manipulating alignments in the SAM format
 #Summary(pl.UTF-8):	-
 Name:		samtools
 Version:	0.1.18
-Release:	1
+Release:	2
 License:	MIT
 Group:		Applications/Science
 Source0:	http://sourceforge.net/projects/samtools/files/%{name}-%{version}.tar.bz2
